@@ -71,7 +71,7 @@ router.put('/:id', async (req, res) => {
       return;
     }
 
-    res.stats(200).json(categoryData);
+    res.status(200).json(categoryData);
   } catch (err) {
     res.status(400).json(err)
   }
